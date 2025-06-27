@@ -12,4 +12,8 @@ class Suma extends BaseController
         echo view("Contenido/Encabezado");
         echo view("VistaFormulario/Cuerpo");
     }
+
+    public function psumar(){
+        
+    }
 }
