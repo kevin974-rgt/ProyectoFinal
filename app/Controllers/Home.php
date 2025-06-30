@@ -9,15 +9,18 @@ class Home extends BaseController
         return view('welcome_message');
     }
 
+
      public function index1(): string
     {
-        return view('VistaLogin/Formulario1');
+        return view('VistaLogin/tablaMultiplicar');
     }
+
 
     public function index2(): string
     {
-        return view('VistaFormulario/Formulario2');
+        return view('VistaLogin/tablaPotencia');
     }
+
 
     public function index3()
     {
