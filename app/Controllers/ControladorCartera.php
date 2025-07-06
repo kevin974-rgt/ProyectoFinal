@@ -1,25 +1,23 @@
 <?php
 
-namespace App\Controllers; 
-
+namespace App\Controllers;
 
 class ControladorCartera extends BaseController
-// Declaración de la clase ControladorCartera que hereda de BaseController
-// Esta clase controla las solicitudes relacionadas con carteras en la aplicación
 {
-    public function C1()
-    // Método público C1, accesible desde una ruta o URL
+    public function mostrar($id = null)
     {
-        return view('ContenedorCarteras/Mano');
-        // Retorna la vista ubicada en app/Views/ContenedorCarteras/Mano.php
-        // Probablemente muestra carteras de mano
-    }
+        // Validar sesión
+        if (!session()->has('usuario')) {
+            return redirect()->to('/');
+        }
 
-    public function C2()
-    // Método público C2, también accesible desde una ruta o URL
-    {
-        return view('ContenedorCarteras/Hombro');
-        // Retorna la vista ubicada en app/Views/ContenedorCarteras/Hombro.php
-        // Probablemente muestra carteras de hombro
+        // Mostrar vista según id
+        if ($id == 1) {
+            return view('ContenedorCarteras/Mano');
+        } elseif ($id == 2) {
+            return view('ContenedorCarteras/Hombro');
+        } else {
+            return "ID no válido para carteras.";
+        }
     }
 }

@@ -1,25 +1,23 @@
 <?php
 
-namespace App\Controllers; 
-
+namespace App\Controllers;
 
 class ControladorVestido extends BaseController
-// Clase ControladorVestido que hereda de BaseController
-// Controla las solicitudes relacionadas con vestidos en la aplicación
 {
-    public function V1()
-    // Método público V1, accesible mediante una ruta definida
+    public function mostrar($id = null)
     {
-        return view('ContenedorVestidos/Fiesta');
-        // Devuelve la vista ubicada en app/Views/ContenedorVestidos/Fiesta.php
-        // Generalmente muestra vestidos para fiesta o eventos informales
-    }
+        // Validar que el usuario esté logueado
+        if (!session()->has('usuario')) {
+            return redirect()->to('/');
+        }
 
-    public function V2()
-    // Método público V2, también accesible vía URL o ruta
-    {
-        return view('ContenedorVestidos/Formal');
-        // Devuelve la vista ubicada en app/Views/ContenedorVestidos/Formal.php
-        // Generalmente muestra vestidos formales o de gala
+        // Mostrar vista según id
+        if ($id == 1) {
+            return view('ContenedorVestidos/Fiesta');
+        } elseif ($id == 2) {
+            return view('ContenedorVestidos/Formal');
+        } else {
+            return "ID no válido para vestidos.";
+        }
     }
 }

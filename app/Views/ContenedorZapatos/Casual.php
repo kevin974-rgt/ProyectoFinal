@@ -4,7 +4,7 @@
     <meta charset="UTF-8"> 
     <title>Zapatos Casual</title> <!-- Título que aparece en la pestaña del navegador -->
     <!-- Enlace a la hoja de estilos Bootstrap para un diseño responsivo y moderno -->
-    <link rel="stylesheet" href="<?= base_url('css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/css/bootstrap.min.css') ?>">
 </head>
 <body>
     <div class="container py-4"> <!-- Contenedor central con padding vertical -->
@@ -14,7 +14,7 @@
 
             <div class="col-md-4"> <!-- Columna que ocupa 4 espacios en pantallas medianas -->
                 <div class="card"> <!-- Tarjeta Bootstrap para mostrar un producto -->
-                    <img src="<?= base_url('img/casual1.webp') ?>" class="card-img-top" alt="Zapato Casual 1">
+                    <img src="<?= base_url('public/img/casual1.webp') ?>" class="card-img-top" alt="Zapato Casual 1">
                     <!-- Imagen del producto, ocupa la parte superior de la tarjeta -->
                     <div class="card-body"> <!-- Cuerpo de la tarjeta para texto y botones -->
                         <h5 class="card-title">Zapato Beige Casual</h5> <!-- Nombre del producto -->
@@ -26,7 +26,7 @@
 
             <div class="col-md-4"> <!-- Segunda columna para otro producto -->
                 <div class="card">
-                    <img src="<?= base_url('img/casual2.jpg') ?>" class="card-img-top" alt="Zapato Casual 2">
+                    <img src="<?= base_url('public/img/casual2.jpg') ?>" class="card-img-top" alt="Zapato Casual 2">
                     <div class="card-body">
                         <h5 class="card-title">Zapato Marrón Café</h5>
                         <p class="card-text">$60.00</p>
@@ -37,7 +37,7 @@
 
             <div class="col-md-4"> <!-- Tercera columna con otro producto -->
                 <div class="card">
-                    <img src="<?= base_url('img/casual3.webp') ?>" class="card-img-top" alt="Zapato Casual 3">
+                    <img src="<?= base_url('public/img/casual3.webp') ?>" class="card-img-top" alt="Zapato Casual 3">
                     <div class="card-body">
                         <h5 class="card-title">Zapato Casual Azul</h5>
                         <p class="card-text">$58.00</p>
@@ -50,7 +50,7 @@
     </div> <!-- Fin del contenedor -->
 
     <!-- Script de Bootstrap para funcionalidades dinámicas -->
-    <script src="<?= base_url('js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="<?= base_url('public/js/bootstrap.bundle.min.js') ?>"></script>
 </body>
 </html>
 

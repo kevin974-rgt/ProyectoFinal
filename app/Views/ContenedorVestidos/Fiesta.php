@@ -4,7 +4,7 @@
     <meta charset="UTF-8"> 
     <title>Vestidos de Fiesta</title> <!-- Título que aparecerá en la pestaña del navegador -->
     <!-- Enlace a la hoja de estilos Bootstrap para un diseño responsivo y moderno -->
-    <link rel="stylesheet" href="<?= base_url('css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/css/bootstrap.min.css') ?>">
 </head>
 <body>
     <div class="container py-4"> <!-- Contenedor principal con padding vertical -->
@@ -15,7 +15,7 @@
             <!-- Producto 1 -->
             <div class="col-md-4"> <!-- Columna que ocupa 4 espacios en pantallas medianas -->
                 <div class="card"> <!-- Tarjeta Bootstrap para mostrar producto -->
-                    <img src="<?= base_url('img/fiesta1.webp') ?>" class="card-img-top" alt="Vestido Fiesta 1">
+                    <img src="<?= base_url('public/img/fiesta1.webp') ?>" class="card-img-top" alt="Vestido Fiesta 1">
                     <!-- Imagen del producto, se adapta al ancho superior de la tarjeta -->
                     <div class="card-body"> <!-- Cuerpo de la tarjeta para texto y botones -->
                         <h5 class="card-title">Vestido Rojo Elegante</h5> <!-- Nombre del producto -->
@@ -28,7 +28,7 @@
             <!-- Producto 2 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="<?= base_url('img/fiesta2.webp') ?>" class="card-img-top" alt="Vestido Fiesta 2">
+                    <img src="<?= base_url('public/img/fiesta2.webp') ?>" class="card-img-top" alt="Vestido Fiesta 2">
                     <div class="card-body">
                         <h5 class="card-title">Vestido Azul Noche</h5>
                         <p class="card-text">$135.00</p>
@@ -40,7 +40,7 @@
             <!-- Producto 3 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="<?= base_url('img/fiesta3.avif') ?>" class="card-img-top" alt="Vestido Fiesta 3">
+                    <img src="<?= base_url('public/img/fiesta3.avif') ?>" class="card-img-top" alt="Vestido Fiesta 3">
                     <div class="card-body">
                         <h5 class="card-title">Vestido Plateado Brillante</h5>
                         <p class="card-text">$150.00</p>
@@ -53,6 +53,6 @@
     </div> <!-- Fin del contenedor -->
 
     <!-- Script de Bootstrap para funcionalidades dinámicas -->
-    <script src="<?= base_url('js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="<?= base_url('public/js/bootstrap.bundle.min.js') ?>"></script>
 </body>
 </html>
